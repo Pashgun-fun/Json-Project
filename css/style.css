@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  margin: 0 auto;
+  max-width: 50vw;
+}
+table tr {
+  text-align: center;
+  position: relative;
+}
+table th {
+  display: table-cell;
+  position: relative;
+  min-width: 100px;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url("../img/visibility.svg") no-repeat;
+  background-size: 100% 100%;
+}
+span:hover {
+  cursor: pointer;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.spec {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: url("../img/visibility_hide.svg") no-repeat;
+  background-size: 100% 100%;
+  margin-left: 10px;
+}
+.spec:hover {
+  cursor: pointer;
+}
+
+tbody {
+  border: 1px solid red;
+}
+
+.edit {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid silver;
+  border-radius: 4px;
+}
+.edit .edit__wrapper {
+  position: relative;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.edit .edit__wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 8px;
+  right: 100%;
+  border: 11px solid transparent;
+  border-right-color: black;
+}
+.edit .edit__wrapper * + * {
+  margin-bottom: 5px;
+}
+.edit .edit__wrapper label:first-child {
+  margin-bottom: 5px;
+}
+.edit .edit__wrapper label input, .edit .edit__wrapper label textarea {
+  outline: none;
+  border: 0.5px solid silver;
+}
+.edit .edit__wrapper label input {
+  height: 30px;
+}
+.edit .edit__wrapper .apply {
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+}
