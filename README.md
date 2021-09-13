@@ -1,2 +1,2 @@
 # Json-Project
-Most importantly, this project was made as a test task for one of the companies to pass an internship in the direction of JS developer.
+Most importantly, this project was made as a test task for one of the companies to pass an internship in the direction of JS developer. This project used the most primitive development methods, without working with asynchronous code and OOP. All these technologies will be presented in future projects that will be added in the near future. Inside the js file format, there are comments on some lines and a description of what this or that function does.
